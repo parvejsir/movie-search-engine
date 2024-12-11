@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.fontfamilyclass {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+body{
+    background-color: black;
+    color: white;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+h1{
+    text-align: center;
+    margin: 10px;padding: 10px;
+}
+form{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.search{
+height: 30px;
+width: 80px;
+background-color: rgb(74, 74, 220);
+color: white;
+font-size: 1rem;
+padding: 0.25em 0.73em;
+font-weight: bold;
+box-shadow: 1px 1px 1px 1px rgb(105, 104, 104);
+border-radius: 2px;
+transition: 0.35 all ease-in-out;
+}
+.search:hover{
+ cursor: pointer;
+}
+.search:active{
+    transform: translate(1px,1px);
+    box-shadow: 1px 1px 7px 0 rgb(105, 104, 104);
+
+}
+img{
+    min-width: 100%;
+    display: flex;
+    box-shadow: 0 0 3px 2px black;
+    transition: 0.35s all ease-in-out;
+}
+img:hover{
+    transform:scale(1.06);
+}
+.image-container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,0.4fr));
+    gap: 10px;
+    margin: 10px auto;
+    place-content: center;
+}
+input{
+    font-size: 1.4rem;
+    border: none;
+    outline:none;
+    border-radius: 0.1em;
+
+}
+input:focus-within{
+    box-shadow: 0 0 3px 3px rgb(30,156,129);
+}
